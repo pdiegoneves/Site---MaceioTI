@@ -77,17 +77,50 @@ h1, h2, h3, h4, h5, h6 {
 
 .servicos-container {
     padding: 2rem;
-    height: 300px;
+    height: auto;
     width: 100%;
+    position: absolute;
     bottom: 0;
 }
 
 .servicos {
     position: relative;
     display: flex;
-    height: 200px;
+    height: 210px;
+    align-items: center;
     font-weight: 100vw;
-    margin: 0 auto;
     width: 100%;
     background-color: rebeccapurple;
+    flex-wrap: nowrap;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.card-title {
+  background-color: rgba(101,193,233,.8);
+  clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+  width: 80%;
+  padding: 0.5rem;
+}
+.card-title h1 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #E93736;
+}
+
+.card {
+  display: inline-block;
+  position: relative;
+  width: 270px;
+  height: 200px;
+  background-size: cover;
+}
+
+
+
+.card.hardware {
+  background-image: url("assets/images/hardware.webp");
+}
+
+.card.redes {
+  background-image: url("assets/images/redes.webp");
 }
