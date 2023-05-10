@@ -139,29 +139,29 @@ h6 {
 }
 
 .card.hardware {
-  background-image: url("assets/images/hardware.webp");
+  background-image: url("../assets/images/hardware.webp");
 }
 
 .card.redes {
-  background-image: url("assets/images/redes.webp");
+  background-image: url("../assets/images/redes.webp");
 }
 
 .card.criacao-de-sites {
-  background-image: url("assets/images/criacao-de-sites.webp");
+  background-image: url("../assets/images/criacao-de-sites.webp");
 }
 .card.terceirizacao {
-  background-image: url("assets/images/terceirizacao.webp");
+  background-image: url("../assets/images/terceirizacao.webp");
 }
 .card.formatacao {
-  background-image: url("assets/images/formatacao.webp");
+  background-image: url("../assets/images/formatacao.webp");
 }
 
 .modal {
   transform: scale(0);
   background-color: #e93736;
   position: fixed;
-  left: 10vw;
-  top: 10vh;
+  left: 0;
+  top: 0;
   right: 10vw;
   bottom: 10vh;
   transition: all 1s ease-out;
@@ -170,5 +170,15 @@ h6 {
 .modal.active {
   transform: scale(1);
   transition: all 1s ease-out;
+  z-index: 999;
+}
 
+.modal > .fechar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 1px solid #191a15;
+  padding: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
 }
