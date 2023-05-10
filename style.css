@@ -155,3 +155,20 @@ h6 {
 .card.formatacao {
   background-image: url("assets/images/formatacao.webp");
 }
+
+.modal {
+  transform: scale(0);
+  background-color: #e93736;
+  position: fixed;
+  left: 10vw;
+  top: 10vh;
+  right: 10vw;
+  bottom: 10vh;
+  transition: all 1s ease-out;
+}
+
+.modal.active {
+  transform: scale(1);
+  transition: all 1s ease-out;
+
+}
