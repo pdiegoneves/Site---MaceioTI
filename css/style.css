@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+*::selection {
+  background-color: #65c1e9;
+}
+
 body {
   background: #191a15 url("./assets/images/bg.svg") no-repeat;
   background-size: cover;
@@ -174,7 +178,23 @@ h6 {
   position: relative;
   width: 90vw;
   height: 90vh;
-  background-color: #036b3c88;
+  background-color: #65c1e9b9;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 15rem;
+  color: #191a15;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.modal-container > h1 {
+  margin-bottom: 1rem;
+}
+
+.modal-container > p {
+  margin-bottom: 0.5rem;
+  text-align: justify;
 }
 
 .modal.active {
