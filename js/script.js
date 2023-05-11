@@ -1,13 +1,16 @@
 const doc = document;
 const linkSobre = doc.querySelector(".link.sobre");
+const linkContato = doc.querySelector(".link.contato")
 const modal = doc.getElementById("modal");
-const modalContaine = doc.getElementById("modal-container");
+const modalContainer = doc.getElementById("modal-container");
 
 linkSobre.addEventListener("click", (e) => {
   e.preventDefault();
-  modalContaine.innerHTML = `
+  modalContainer.innerHTML = `
   <span id="fechar-modal" class="fechar" onclick="handleFecharModal()">X</span>
-  <h1>Maceió TI</h1>
+  <header>
+    <h1>Sobre</h1>
+  </header>
   <p>
     Somos uma empresa de TI inovadora e confiável sediada na bela cidade de Maceió, Alagoas. Desde o seu surgimento em 2021, a Maceió TI tem se dedicado a fornecer serviços de informática de alta qualidade, tornando-se rapidamente uma referência no mercado local. Com uma equipe experiente e apaixonada pelo que faz, nossa empresa está empenhada em ajudar os clientes a alcançarem o sucesso e atender suas demandas de negócios.
   </p>
@@ -21,6 +24,25 @@ linkSobre.addEventListener("click", (e) => {
   modal.classList.add("active");
 });
 
+linkContato.addEventListener("click", (e) => {
+  e.preventDefault()
+  modalContainer.innerHTML = `
+    <span id="fechar-modal" class="fechar" onclick="handleFecharModal()">X</span>
+    <header>
+      <h1>Contatos</h1>
+    </header>
+    <ul class="lista-contatos">
+      <li class="list-contatos-item"><a href="tel:82996207887"><h2>Telefone:</h2> <span>(82) 9 9620-7887</span></a></li>
+      <li class="list-contatos-item"><a href="https://api.whatsapp.com/send?phone=5582996207887&text=Ol%C3%A1,%0ACheguei%20atrav%C3%A9s%20do%20site." target="_blank"><h2>Whatsapp:</h2> <span>(82) 9 9620-7887</span></a></li>
+      <li class="list-contatos-item"><a href="mailto:diego.neves@outlook.com.br"><h2>E-mail:</h2> <span>diego.neves@maceioti.com.br</span></a></li>
+    </ul>
+  `
+  modal.classList.add("active");
+
+})
+
+
 const handleFecharModal = (params) => {
   modal.classList.remove("active");
 };
+
