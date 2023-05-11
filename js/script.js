@@ -7,7 +7,7 @@ const modalContainer = doc.getElementById("modal-container");
 linkSobre.addEventListener("click", (e) => {
   e.preventDefault();
   modalContainer.innerHTML = `
-  <span id="fechar-modal" class="fechar" onclick="handleFecharModal()">X</span>
+  <span id="fechar-modal" class="fechar" onclick="handleFecharModal()"><img src="assets/images/close-modal.svg"></span>
   <header>
     <h1>Sobre</h1>
   </header>
@@ -27,7 +27,7 @@ linkSobre.addEventListener("click", (e) => {
 linkContato.addEventListener("click", (e) => {
   e.preventDefault()
   modalContainer.innerHTML = `
-    <span id="fechar-modal" class="fechar" onclick="handleFecharModal()">X</span>
+    <span id="fechar-modal" class="fechar" onclick="handleFecharModal()"><img src="assets/images/close-modal.svg"></span>
     <header>
       <h1>Contatos</h1>
     </header>
