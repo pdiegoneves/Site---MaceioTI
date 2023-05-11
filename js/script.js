@@ -1,19 +1,19 @@
 const doc = document
 const linkSobre = doc.querySelector('.link.sobre')
 const modal = doc.getElementById('modal')
-const fecharModal = doc.getElementById('#fechar-modal')
+const modalContaine = doc.getElementById('modal-container')
 
 linkSobre.addEventListener('click', (e) => {
   e.preventDefault()
-  modal.innerHTML += `
+  modalContaine.innerHTML = `
+  <span id="fechar-modal" class="fechar" onclick="handleFecharModal()">X</span>
+
     <h1>Teste</h1>
   `
   modal.classList.add('active')
 
 })
 
-// fecharModal.addEventListener('click', () => {
-//   alert("teste")
-
-//   // modal.classList.remove('active')
-// })
+const handleFecharModal = (params) => {
+  modal.classList.remove('active')
+}
