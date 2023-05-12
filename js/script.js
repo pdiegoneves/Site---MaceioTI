@@ -3,6 +3,12 @@ const linkSobre = doc.querySelector(".link.sobre");
 const linkContato = doc.querySelector(".link.contato")
 const modal = doc.getElementById("modal");
 const modalContainer = doc.getElementById("modal-container");
+const cardHardware = doc.querySelector(".card.hardware")
+const cardRedes = doc.querySelector(".card.redes")
+const cardCriacaoDeSites = doc.querySelector(".card.criacao-de-sites")
+const cardTerceirizacao = doc.querySelector(".card.terceirizacao")
+const cardFormatacao = doc.querySelector(".card.formatacao")
+
 
 linkSobre.addEventListener("click", (e) => {
   e.preventDefault();
@@ -12,13 +18,7 @@ linkSobre.addEventListener("click", (e) => {
     <h1>Sobre</h1>
   </header>
   <p>
-    Somos uma empresa de TI inovadora e confiável sediada na bela cidade de Maceió, Alagoas. Desde o seu surgimento em 2021, a Maceió TI tem se dedicado a fornecer serviços de informática de alta qualidade, tornando-se rapidamente uma referência no mercado local. Com uma equipe experiente e apaixonada pelo que faz, nossa empresa está empenhada em ajudar os clientes a alcançarem o sucesso e atender suas demandas de negócios.
-  </p>
-  <p>
-    Na Maceió TI, entendemos que as necessidades de negócios estão sempre evoluindo. Por isso, oferecemos soluções personalizadas e escaláveis para auxiliar nossos clientes a crescerem e se adaptarem às mudanças do mercado. Com uma ampla gama de serviços, desde desenvolvimento de sites institucionais e gestão de projetos até suporte técnico e consultoria, estamos preparados para enfrentar qualquer desafio tecnológico que nossos clientes possam encontrar.
-  </p>
-  <p>
-    O que nos diferencia é o compromisso com a excelência e a satisfação do cliente. Trabalhamos em estreita colaboração com nossos parceiros comerciais, entendendo suas necessidades específicas e fornecendo soluções sob medida que impulsionam o crescimento e melhoram a eficiência operacional. Com nossa experiência e conhecimento em tecnologia, estamos prontos para ser o parceiro ideal para sua empresa em Maceió, ajudando você a alcançar seus objetivos e destacar-se no mercado cada vez mais competitivo.
+  Na Maceió TI, entendemos que a tecnologia é um elemento vital para o sucesso empresarial. Por isso, oferecemos soluções personalizadas e escaláveis que se adaptam às suas necessidades em constante evolução. Desde o desenvolvimento de sites institucionais até a consultoria estratégica, nossa ampla gama de serviços é projetada para impulsionar o crescimento e melhorar a eficiência operacional. Trabalhamos em estreita colaboração com nossos clientes, entendendo suas metas e objetivos, e oferecendo soluções sob medida que realmente fazem a diferença. Junte-se a nós e descubra como a Maceió TI pode ajudar sua empresa a se destacar em um mercado cada vez mais competitivo.
   </p>
   `;
   modal.classList.add("active");
@@ -41,6 +41,31 @@ linkContato.addEventListener("click", (e) => {
 
 })
 
+
+cardHardware.addEventListener("click", (e) => {
+  e.preventDefault();
+  alert("teste")
+})
+
+cardRedes.addEventListener("click", (e) => {
+  e.preventDefault();
+  alert("teste")
+})
+
+cardCriacaoDeSites.addEventListener("click", (e) => {
+  e.preventDefault();
+  alert("teste")
+})
+
+cardTerceirizacao.addEventListener("click", (e) => {
+  e.preventDefault();
+  alert("teste")
+})
+
+cardFormatacao.addEventListener("click", (e) => {
+  e.preventDefault();
+  alert("teste")
+})
 
 const handleFecharModal = (params) => {
   modal.classList.remove("active");
