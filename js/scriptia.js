@@ -43,9 +43,12 @@ linkContato.addEventListener("click", (e) => {
 cards.forEach((card) => {
   card.addEventListener("click", (e) => {
     e.preventDefault();
-    console.log(e.target.classList.value)
-    // console.log(e.srcElement.classList.value)
-    alert("teste");
+    if (e.target.classList.value == 'card hardware') {
+      openModal('Hardware',
+      `
+        <p>Serviços de hardware</p>
+      `)
+    }
   });
 });
 
