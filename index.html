@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-BT">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Ysabeau+SC:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap"
+        rel="stylesheet">
+
     <title>Maceió TI</title>
 </head>
+
 <body>
-    
+    <header class="topo">
+        <h1 class="hidden">Maceió TI</h1>
+        <img class="logo-topo" src="assets/img/logo.svg" alt="Logo - Maceió TI">
+        <nav>
+            <ul>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1 class="hidden">Hero</h1>
+        <picture>
+            <source media="(min-width:1500px)" srcset="./assets/img/hero-extra.webp">
+            <source media="(min-width:1000px)" srcset="./assets/img/hero-desk.webp">
+            <source media="(min-width:500px)" srcset="./assets/img/hero-tab.webp">
+            <source media="(max-width:499px)" srcset="./assets/img/hero-mob.webp">
+            <img src="assets/img/hero-default.jpg" alt="Maceió" title="Maceió">
+        </picture>
+        <h2 class="hero-text">Serviços em <br>Informática</h2>
+    </section>
+    <section class="servicos">
+        <h1 class="hidden">Serviços</h1>
+        <article class="servico">
+            <header>
+                <h1 class="servico-title">Formatação</h1>
+                <img src="" alt="">
+            </header>
+            <section>
+                <h2 class="hidden">Descrição</h2>
+                <div class="servico-desc"></div>
+            </section>
+        </article>
+
+        <article class="servico">
+            <header>
+                <h1 class="servico-title"></h1>
+                <img src="" alt="">
+            </header>
+            <section>
+                <h2 class="hidden">Descrição</h2>
+                <div class="servico-desc"></div>
+            </section>
+        </article>
+
+        <ul>
+            <small>se está aqui é pq ainda não está pronto</small>
+            <li></li>
+            <li>Manutenção de computadores</li>
+            <li>Redes</li>
+            <li>Servidores</li>
+            <li>Câmeras</li>
+            <li>Outsourcing</li>
+            <li>Atendimento por parceiria ** melhorar esse nome</li>
+        </ul>
+    </section>
+    <section class="parceiros">
+        <h1 class="hidden">Parceiros e Clientes</h1>
+
+    </section>
+
+    <section class="menu-mobile" id="menu-mobile">
+        <h1 class="hidden">Menu-mobile</h1>
+        <nav>
+            <h2 class="hidden">Menu</h2>
+            <ul>
+                <li class="link-mobile-whats"><a
+                        href="https://api.whatsapp.com/send?phone=5582996207887&text=Ol%C3%A1,%20cheguei%20pelo%20site!"
+                        target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+            </ul>
+        </nav>
+    </section>
+    <div class="menu-mobile-space"></div>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
