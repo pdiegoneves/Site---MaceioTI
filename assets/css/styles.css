@@ -6,6 +6,7 @@ font-family: 'Ysabeau SC', sans-serif;
 
 :root {
     --cor-primaria: #FFC80B;
+    --cor-primaria-tranp: #FFC80B99;
     --cor-secundaria: #101920;
     --cor-terciaria: #fefefe;
 }
@@ -93,13 +94,19 @@ section.servicos {
 
 .servico {
     background-color: var(--cor-primaria);
-
     width: 90%;
     background-color: var(--cor-terciaria);
     color: var(--cor-secundaria);
-    padding: 0.5em;
-    border-radius: 15px;
+    padding: 1em;
+    border-radius: 40px;
     position: relative;
+    transition: all 0.3s ease-in-out 50ms;
+    box-shadow: 2px 2px 4px rgba(255, 255, 255, .5);
+}
+
+.servico:hover {
+    border-radius: 0;
+    transition: all 0.3s ease-in-out 50ms;
 }
 
 .servico-avatar {
@@ -114,9 +121,13 @@ section.servicos {
     top: 40px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-primaria-tranp);
     padding: 0.5em;
     border-radius: 10px;
+}
+
+.servico-desc {
+    text-align: justify;
 }
 
 
