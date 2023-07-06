@@ -86,10 +86,8 @@ section.servicos {
     background-color: var(--cor-secundaria);
     color: var(--cor-terciaria);
     gap: 1em;
-}
-
-.servicos > h1 {
-    margin-top: 1em;
+    min-height: 100vh;
+    padding: 1em 0 2em 0;
 }
 
 .servico {
@@ -97,20 +95,20 @@ section.servicos {
     width: 90%;
     background-color: var(--cor-terciaria);
     color: var(--cor-secundaria);
-    padding: 1em;
+    padding: 2em;
     border-radius: 40px;
     position: relative;
     transition: all 0.3s ease-in-out 50ms;
-    box-shadow: 2px 2px 4px rgba(255, 255, 255, .5);
 }
 
 .servico:hover {
-    border-radius: 0;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 4px rgba(255, 255, 255, .5);
     transition: all 0.3s ease-in-out 50ms;
 }
 
 .servico-avatar {
-    height: 100px;
+    height: 200px;
     width: 100%;
     object-fit: cover;
 }
@@ -118,18 +116,34 @@ section.servicos {
 
 .servico .servico-title {
     position: absolute;
-    top: 40px;
+    top: 90px;
     left: 50%;
+    width: 70%;
+    text-align: center;
     transform: translateX(-50%);
     background-color: var(--cor-primaria-tranp);
     padding: 0.5em;
     border-radius: 10px;
+    color: var(--cor-secundaria);
 }
 
 .servico-desc {
     text-align: justify;
 }
+.servico-desc p {
+    margin-bottom: 5px;
+}
 
+section.parceiros {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cor-terciaria); 
+    color: var(--cor-secundaria); 
+    gap: 1em;
+    min-height: 100vh;
+    padding: 1em 0 2em 0;
+}
 
 .menu-mobile-space {
     height: 75px;
